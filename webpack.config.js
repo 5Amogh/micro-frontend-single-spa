@@ -25,5 +25,10 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       }),
     ],
+    devServer: {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    }
   });
 };
